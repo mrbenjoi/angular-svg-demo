@@ -1,0 +1,4 @@
+
+<svg [attr.viewBox]="'0 0 100 100'" *ngIf="area != undefined">
+    <circle *ngFor="let c of area.coordinates" [attr.cx]="c.lon" [attr.cy]="c.lat" r="1" stroke="none" fill="black" />
+</svg>

@@ -1,10 +1,8 @@
 
 
-class Area {
+export class Area {
 
-    constructor(
-        public coordinates: Coordinates[] = []
-    ) { }
+    coordinates: Coordinates[] = []
 
     public get isEmpty(): boolean {
         return this.coordinates.length == 0
@@ -12,11 +10,16 @@ class Area {
 
 }
 
-class Coordinates {
+export class Coordinates {
+
+    lat: Number
+    lon: Number
 
     constructor(
-        public lat: Number,
-        public lon: Number
-    ) { }
+        lat: Number, lon: Number
+    ) {
+        this.lat = lat
+        this.lon = lon
+    }
 
 }
